@@ -7,6 +7,9 @@
 a {
   cursor: pointer !important;
 }
+#recycle_counter {
+  visibility: hidden;
+}
 .scroller::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -23,15 +26,18 @@ a {
   color: white;
 }
 .btn-brand-outline {
-  color: white;
+  color: white !important;
   background: inherit;
 }
 .btn-brand-white{
     background: white;
-    color: #0094e7;
+    color: #0094e7 !important;
 }
 .our-nav{
     background: #0094e7;
+}
+#re_auth_preloader {
+  visibility: hidden;
 }
 .brand-image{
     height: 6vh;
@@ -40,7 +46,10 @@ a {
     height: 100%;
 }
 .our-nav .brand-image span{
-    color: white;
+  font-weight: 600;
+  color: white;
+  font-size: 22px;
+  margin-left: 15px;
 }
 .our-nav{
   height: 10vh;
@@ -73,14 +82,26 @@ a {
   font-size: 14px;
   margin: 0;
 }
+#saveImage {
+  visibility: hidden;
+}
+.percent_formatting {
+  position:absolute; left: 30%; margin-left:-20px; top:40%; font-size: 80px;
+}
 .preloader_bg {
   width: 100%;
   height: 100%;
-  z-index: 999;
-  position: absolute;
+  z-index: 999999999;
+  position: fixed;
   background: black;
   opacity: 0.4;
   display: none;
+}
+.preloader_bg_2 {
+  width: 100%;
+  height: 100%;
+  z-index: 999999999;
+  opacity: 1;
 }
 .bounceOutContinue {
   animation: bounceOut 1s infinite linear;
@@ -102,4 +123,17 @@ a {
 }
 .action {
   background: #0094e7 !important;
+}
+.navbar-collapse {
+  z-index: 1000;
+  background: #0094e7;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px;
+}
+.footer-links .mt-3 .mx-5 {
+  margin-right: 0 !important;
+}
+.filler {
+  display: none !important;
 }
